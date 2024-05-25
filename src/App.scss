@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+}
+
+main{
+    width: 100%;
+    padding: 64px 80px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+@media only screen and (max-width: 1120px) {
+    section {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    main{
+        padding: 64px 10px;
+    }
+}

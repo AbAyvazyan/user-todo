@@ -1,0 +1,91 @@
+
+.modalContent {
+  width: 500px;
+  height: 468px;
+  padding: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 40px;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 20px 0px #0000001A;
+
+  .topPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+    h3 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: left;
+      color: #262C40;
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .contactPart {
+    width: 100%;
+    margin-bottom: 40px;
+
+    .contactLine {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 14px;
+
+      & > div {
+        width: 35%;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+
+        &:first-child {
+          color: #262C40;
+        }
+
+        &:last-child {
+          width: 60%;
+          margin-bottom: 0;
+          color: #8189A3;
+        }
+      }
+    }
+  }
+
+  .additional {
+    width: 100%;
+
+    h4 {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 0 0 12px;
+      color: #262C40;
+    }
+
+    p{
+      margin: 0;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left;
+      color: #8189A3;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .modalContent{
+    width: 350px;
+    height: max-content;
+  }
+}
